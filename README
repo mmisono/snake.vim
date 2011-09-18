@@ -1,0 +1,7 @@
+
+Usage: Snake [width height]
+
+i: start 
+esc: pause
+hjkl: move
+
