@@ -34,13 +34,13 @@ function! s:snake(...)
 		let s:height = 18
 	endif
 
-	let winnum = bufwinnr(bufnr('\*Snake\*'))
+	let winnum = bufwinnr(bufnr('==Snake=='))
 	if winnum != -1
 		if winnum != bufwinnr('%')
 			exe "normal \<c-w>".winnum."w"
 		endif
 	else
-		exec 'silent split \*Snake\*'
+		exec 'silent split ==Snake=='
 	endif
 
 	setl nonumber
